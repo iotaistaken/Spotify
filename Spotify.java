@@ -1,12 +1,11 @@
-package lab_1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Spotify
 {
-	ArrayList<Customer> customers;
-	ArrayList<Artist> artists;
+	private  ArrayList<Customer> customers;
+	private  ArrayList<Artist> artists;
 	
 	public Spotify()
 	{
@@ -14,7 +13,7 @@ public class Spotify
 		this.artists = new ArrayList<Artist>();
 	}
 	// Return Money to be spent on Subscription
-	public int Subs_Money(int x)
+	private  int Subs_Money(int x)
 	{
 		if (x==1)
 		{
@@ -239,7 +238,7 @@ public class Spotify
 
 class Album
 {
-	ArrayList<Song> album;
+	private  ArrayList<Song> album;
 	public Album(int x)
 	{
 		this.album = new ArrayList<Song>();
@@ -248,10 +247,10 @@ class Album
 
 class Song
 {
-	int plays;
-	int downloads;
-	int id;
-	String name;
+	private int plays;
+	private int downloads;
+	private int id;
+	private String name;
 	public Song(int x, String nm)
 	{
 		this.id = x;
@@ -270,11 +269,11 @@ class Song
 }
 class Artist
 {
-	int id;
-	String name;
-	int earnings;
-	int dues=0;
-	ArrayList<Song> song_list;
+	private int id;
+	private String name;
+	private int earnings;
+	private int dues=0;
+	private ArrayList<Song> song_list;
 	public Artist(int x, String nm)
 	{
 		this.id = x;
@@ -311,12 +310,12 @@ class Artist
 
 class Customer
 {
-	int id;
-	int plays;
-	int downloads;
-	String name;
-	int dues;
-	int subscrption=1;
+	private int id;
+	private int plays;
+	private int downloads;
+	private String name;
+	private int dues;
+	private int subscrption=1;
 	public Customer(int x, String nm)
 	{
 		int plays = 0;
